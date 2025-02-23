@@ -1,0 +1,10 @@
+# NetData Container
+
+Runs NetData for real-time system performance monitoring and visualization.
+
+```bash
+docker run -d \
+  --name netdata \
+  -p 19999:19999 \
+  --restart unless-stopped \
+  netdata/netdata:latest
