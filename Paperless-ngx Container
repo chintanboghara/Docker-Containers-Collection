@@ -1,0 +1,13 @@
+# Paperless-ngx Container
+
+Runs Paperless-ngx to digitize, manage, and organize your paper documents.
+
+```bash
+docker run -d \
+  --name paperless-ngx \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Etc/UTC \
+  -p 8000:8000 \
+  --restart unless-stopped \
+  ghcr.io/paperless-ngx/paperless-ngx:latest
